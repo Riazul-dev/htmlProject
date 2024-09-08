@@ -202,15 +202,6 @@ header > nav > a {
   max-width: 475px;
 }
 
-/* .aboutSectionRight > div {
-  color: var(--color-base);
-  line-height: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  font-size: 18px;
-} */
-
 /* Service section */
 .serviceSection {
   display: grid;
@@ -465,13 +456,14 @@ header > nav > a {
   /* Hero section */
   .heroSection {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 40px;
-    padding-bottom: 24px;
+    padding-bottom: 34px;
+    padding: 0px 20px;
+    margin-top: 10px;
   }
   .heroDescription h2 {
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
   }
   .myImg {
@@ -490,87 +482,78 @@ header > nav > a {
   .aboutSection {
     flex-direction: column;
     padding: 42px 20px;
-    width: 100%;
     margin: 0px;
   }
 
   .aboutSection > img {
-    width: 375px;
-    margin: 0px auto;
+    width: 320px;
   }
 
-  /* Service setion */
+  /* Service section */
   .serviceSection {
     grid-template-columns: 1fr;
     gap: 40px;
+    padding: 48px 20px;
   }
 
   .serviceRight {
     flex-direction: column;
   }
 
+  .serviceSection .card {
+    padding: 64px 20px;
+    gap: 24px;
+  }
+
+  /* Project section */
+  .projectSection {
+    margin: 32px 20px;
+  }
+  
+  .projectHeader {
+    flex-direction: column;
+    gap: 24px;
+    text-align: end;
+  }
+  
+  .projectHeader > button {
+    order: 1;
+  }
+  
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
   /* Blog section */
   .blogSection {
     padding: 48px 20px;
     margin: auto;
-    /* margin: 32px 0px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: 48px; */
   }
 
   .blogHeader {
-    /* display: flex; */
-    /* justify-content: space-between; */
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
 
-  .blogHeader .blogHeaderLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 24px;
-  }
-
-  .blogHeader .title {
-    color: var(--color-orange);
-  }
-  .blogHeader .description {
-    font-size: 36px;
-  }
-
-  .blogHeader > button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: var(--color-orange);
-    padding-right: 40px;
-  }
-
   .blogs {
-    /* display: flex; */
-    /* justify-content: space-between; */
     flex-direction: column;
+    gap: 40px;
   }
 
-  .blogs > .card {
-    max-width: 380px;
-  }
-  .blogs > .card > img {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-  .blogs > .card > .desc {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .blogs > .card > .desc > span {
-    color: var(--color-body);
-  }
   .blogs > .card > .desc > p {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  /* Contact section */
+  .contactSection {
+    margin: 0px 0px;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footerSection {
+    flex-direction: column;
+    gap: 24px;
   }
 }
